@@ -7,26 +7,7 @@ This project aims to predict the hourly price of Bitcoin (BTC/USDT) for the next
 The project is structured into three main Python scripts:
 1.  `Financial_time_series.py`: Fetches historical hourly Bitcoin price data from the Binance API.
 2.  `data_preprocessing_(2).py`: Collects and preprocesses additional features, merges them with Bitcoin data, and performs scaling and transformations.
-3.  `bitcoin_price_prediction_(1).py`: Trains the NeuralProphet model with the prepared dataset, makes predictions, and visualizes the results.
-
-## Features Used in the Final Model
-
-The prediction model utilizes the following features:
-
-*   **Target Variable:**
-    *   `y`: Bitcoin closing price (log-transformed).
-*   **Lagged Regressors:**
-    *   `google_trend`: Google Trends data for "Bitcoin".
-    *   `hash_rate`: Bitcoin network hash rate.
-    *   `btc_volume`: Bitcoin trading volume.
-    *   `dxy_close`: US Dollar Index (DXY) closing values.
-    *   `gold_close`: Gold (XAU/USD) closing prices.
-    *   `btc_miners`: Bitcoin miners' revenue.
-    *   `btc_address`: Number of unique Bitcoin addresses.
-    *   `btc_eth_corr`: BTC/ETH synthetic correlation.
-    *   `sp500_value`: S&P 500 Index closing values.
-
-## Data Sources
+3.  yav bozmuşsun herşeyi
 
 *   **Bitcoin Price (BTC/USDT):** Binance API (fetched via `requests`).
 *   **Google Trends:** `pytrends` library.
